@@ -24,7 +24,6 @@ public:
 };
    
 /**
-*Solved with recursion (explaination)
 *struct TreeNode {
 *int val;
 *TreeNode *left;
