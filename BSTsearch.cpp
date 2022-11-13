@@ -6,17 +6,17 @@
 
 class Solution { //Struct TreeNode
 public:
-    TreeNode* searchBST(TreeNode* root, int val) { //int Val;
+    TreeNode* searchBST(TreeNode* root, int val) { // Create node, delcare int Val;
         TreeNode* temp = root; 
-        while(temp != NULL){
+        while(temp != NULL){ //If root is null will return null
             if(temp->val == val){
                 return temp;
             }
             else if(val < temp->val){
-                temp = temp->left; //TreeNode *left;
+                temp = temp->left; //TreeNode *left; Search in left
             }
             else{
-                temp = temp->right; //TreeNode *right;
+                temp = temp->right; //TreeNode *right; Search in right
             }
         }
         return NULL;
@@ -24,7 +24,7 @@ public:
 };
    
 /**
-*Solved with recursion
+*Solved with recursion (explaination)
 *struct TreeNode {
 *int val;
 *TreeNode *left;
